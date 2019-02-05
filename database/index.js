@@ -13,7 +13,7 @@ const connectToDB = async () => {
 
   const MONGO_URL = process.env.MONGO_URL || 'localhost:27017';
   const DB_NAME = process.env.MONGO_DB_NAME || 'sample-db';
-  const MONGO_CONNECTION_STRING = `mongodb://${mongoUserCredentials}${MONGO_URL}/${DB_NAME}`;
+  const MONGO_CONNECTION_STRING = process.env.MONGODB_URI;
 
   await mongoose.connect(MONGO_CONNECTION_STRING);
   connection = mongoose;
