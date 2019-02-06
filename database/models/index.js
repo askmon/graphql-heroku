@@ -8,7 +8,7 @@ const USER_SCHEMA = DB.Schema({
   password: String,
   birth: String,
   avatar: String,
-  createdAt: number
+  createdAt: String
 });
 //#endregion schemas
 
