@@ -15,6 +15,9 @@ const startServer = async () => {
       _id: ID!
       name: String
       password: String
+      birth: String
+      avatar: String
+      createdAt: Date
     }
 
     type Query {
@@ -28,6 +31,9 @@ const startServer = async () => {
     input UserInput {
       name: String!
       password: String!
+      birth: String
+      avatar: String
+      createdAt: Date
     }
   `;
 

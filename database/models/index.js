@@ -6,6 +6,9 @@ const DB = getDB();
 const USER_SCHEMA = DB.Schema({
   name: String,
   password: String,
+  birth: String,
+  avatar: String,
+  createdAt: Date
 });
 //#endregion schemas
 
