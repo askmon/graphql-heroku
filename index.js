@@ -28,6 +28,10 @@ const startServer = async () => {
       addUser(input: UserInput): User
     }
 
+    type Mutation {
+      deleteUser(id: String): User
+    }
+
     input UserInput {
       name: String!
       password: String!
@@ -49,6 +53,10 @@ const startServer = async () => {
     Mutation: {
       addUser: async(root, args) => {
         const res = await User.create(args.input);
+        return res;
+      },
+      deleteUser: async(root, args) => {
+        const res = await User.deleteOne(args.id);
         return res;
       },
     },
