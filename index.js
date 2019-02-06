@@ -17,7 +17,7 @@ const startServer = async () => {
       password: String
       birth: String
       avatar: String
-      createdAt: Date
+      createdAt: String
     }
 
     type Query {
@@ -33,7 +33,7 @@ const startServer = async () => {
       password: String!
       birth: String
       avatar: String
-      createdAt: Date
+      createdAt: String
     }
   `;
 
