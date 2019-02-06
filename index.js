@@ -53,7 +53,7 @@ const startServer = async () => {
         return res;
       },
       deleteUser: async(root, args) => {
-        const res = await User.deleteOne(args.id);
+        const res = await User.deleteOne({_id: args.id});
         return res;
       },
     },
