@@ -26,9 +26,6 @@ const startServer = async () => {
 
     type Mutation {
       addUser(input: UserInput): User
-    }
-
-    type Mutation {
       deleteUser(id: String): User
     }
 
