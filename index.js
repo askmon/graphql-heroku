@@ -32,7 +32,7 @@ const startServer = async () => {
     input UserInput {
       name: String!
       password: String!
-      birth: String
+      birth: String @deprecated
       avatar: String
       createdAt: String
     }
